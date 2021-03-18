@@ -8,10 +8,8 @@ const i18n = domI18n({
   selector: '[data-translatable]',
   separator: ' // ',
   languages: ['en', 'fr'],
-  defaultLanguage: 'en',
+  defaultLanguage: 'fr',
 });
-
-i18n.changeLanguage('fr');
 
 document.getElementById('switch-fr-btn').addEventListener('click', () => {
   i18n.changeLanguage('fr');
